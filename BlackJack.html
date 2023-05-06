@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="bet.css">
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js"></script>
+    <script src="bet.js"></script>
+</head>
+<style>
+    body {
+        background-image: url("background.jpg");
+        text-align: center;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 80px;
+    }
+
+    .hidden {
+        display: none;
+    }
+</style>
+
+<body>
+    <div id="music">
+        <button onclick="Music()">Music</button>
+    </div>
+    <div id="bet" class="bet">
+        <h2>BlackJack</h2>
+        <span style="font-weight: bold; color: darkgray;">Bank:
+            <span id="spBank" style="color: white;"></span>
+        </span>
+        <span style="font-weight: bold; color: darkgray;">Bet:
+            <span id="spBet" style="color: white;"></span>
+        </span>
+
+        <button class="allin" onclick="allin(), Click()">ALL IN</button>
+        <br /><br />
+        <div id="btnNums">
+            <button class="one" onclick="addBet(1), Click()">1</button>
+            <button class="five" onclick="addBet(5), Click()">5</button>
+            <button class="twofive" onclick="addBet(25), Click()">25</button>
+            <button class="fivezero" onclick="addBet(50), Click()">50</button>
+            <button class="onezerozero" onclick="addBet(100), Click()">100</button>
+            <button class="fivezerozero" onclick="addBet(500), Click()">500</button>
+            <button class="onezerozerozero" onclick="addBet(1000), Click()">1000</button>
+        </div><br />
+        <button class="clearBet" onclick="clearBet(), Click()">CLEAR BET</button>
+        <br />
+        <button onclick="load(), Click()" class="deal" id="deal">DEAL</button>
+    </div>
+
+    <div id="game" class="hidden">
+        <h2 style="font-weight: bold; color: darkgray;">Dealer:
+            <span id="dealer-sum" style="color: white"></span>
+        </h2>
+        <div id="dealer-cards">
+            <img id="hidden" src="Cards/BACK.png">
+        </div>
+
+        <h2 style="font-weight: bold; color: darkgray;">Player:
+            <span id="player-sum" style="color: white"></span>
+        </h2>
+        <div id="player-cards"></div>
+        <br />
+        <button class="hit" id="hit" onclick="Click()" disabled>HIT</button>
+        <button class="stay" id="stay" onclick="Click()" disabled>STAND</button>
+        <p id="results" style="font-size: 50px; font-weight: bold;"></p>
+        <button class="reset" id="reset" onclick="Click()" disabled>NEXT</button>
+    </div>
+</body>
+
+</html>

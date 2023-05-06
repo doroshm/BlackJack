@@ -1,0 +1,115 @@
+#btnNums button {
+    color: white;
+    font-size: 75px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    font-weight: bold;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#btnNums button:hover {
+    opacity: 60%;
+}
+
+#btnNums button:active {
+    width: 195px;
+    height: 195px;
+}
+
+.one {
+    background-color: white;
+}
+
+.five {
+    background-color: lightcoral;
+}
+
+.twofive {
+    background-color: lightgreen;
+}
+
+.fivezero {
+    background-color: lightblue;
+}
+
+.onezerozero {
+    background-color: darkgrey;
+}
+
+.fivezerozero {
+    background-color: #9748e0;
+}
+
+.onezerozerozero {
+    background-color: lightyellow;
+}
+
+.allin {
+    font-size: 75px;
+    background-color: blue;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.allin:hover {
+    opacity: 85%;
+}
+
+.allin:active {
+    width: 290px;
+}
+
+.clearBet {
+    font-size: 50px;
+    background-color: darkred;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: solid 3px white;
+    border-radius: 20px;
+    width: 300px;
+    height: 100px;
+}
+
+.clearBet:hover {
+    opacity: 85%;
+}
+
+.clearBet:active {
+    width: 290px;
+}
+
+.deal {
+    font-size: 50px;
+    background-color: green;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: solid 3px white;
+    border-radius: 20px;
+    width: 300px;
+    height: 100px;
+}
+
+.deal:hover {
+    opacity: 85%;
+}
+
+.deal:active {
+    width: 290px;
+    height: 90px;
+}
+
+#music button {
+    color: white;
+    position: absolute;
+    width: 50px;
+    background-color: black;
+    border-radius: 10px;
+    margin-left: 500px;
+}

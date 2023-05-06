@@ -1,0 +1,74 @@
+#game {
+    font-size: 50px;
+}
+
+#game img {
+    height: 200px;
+    margin: 5px;
+}
+
+.hit {
+    font-size: 60px;
+    background-color: green;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: solid white 3px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.hit:hover {
+    opacity: 85%;
+}
+
+.hit:active {
+    width: 290px;
+}
+
+.hit:disabled {
+    opacity: 30%;
+}
+
+.stay {
+    font-size: 60px;
+    background-color: green;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: solid white 3px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.stay:hover {
+    opacity: 85%;
+}
+
+.stay:active {
+    width: 290px;
+}
+
+.stay:disabled {
+    opacity: 30%;
+}
+
+.reset {
+    font-size: 60px;
+    background-color: green;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: solid white 3px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.reset:hover {
+    opacity: 85%;
+}
+
+.reset:active {
+    width: 290px;
+}
+
+.reset:disabled {
+    opacity: 30%;
+}
